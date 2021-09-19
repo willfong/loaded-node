@@ -2,5 +2,5 @@ FROM node:lts-alpine
 WORKDIR /app
 COPY package.json yarn.lock /app/
 RUN yarn install
-COPY src/ /app/
+COPY . /app/
 CMD ["yarn", "start"]
